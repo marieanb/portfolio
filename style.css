@@ -1,0 +1,322 @@
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full-height body */
+    font-family: Futura;
+}
+
+#projects-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    height: 100vh; /* Full viewport height */
+}
+
+.project-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Assign different colors to each square */
+.project-box:nth-child(1) {
+    background-color: #ff6945; /* Tomato */
+}
+
+.project-box:nth-child(2) {
+    background-color: #ff9d38; /* Steel Blue */
+}
+
+.project-box:nth-child(3) {
+    background-color: #f7e9e8; /* Lime Green */
+}
+
+.project-box:nth-child(4) {
+    background-color: #fea5a1; /* Gold */
+}
+
+.project-box:nth-child(5) {
+    background-color: #06629e; /* Blue Violet */
+}
+
+.project-box:nth-child(6) {
+    background-color: #043c76; /* Hot Pink */
+}
+
+
+/* Hover effect for squares */
+.project-square:hover {
+    transform: scale(1.1);
+}
+
+/* Header styling */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Keep the background transparent */
+    padding: 0.5em 2em;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: black; /* Change header text to black */
+    font-family: Futura;
+    font-weight: normal;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    /*margin: 0;*/
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Space between navigation items */
+    margin-right: 4em;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: black; /* Change navigation links to black */
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: Futura;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Remove underline from links inside project boxes */
+.project-box a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Ensure text color is white */
+    display: flex; /* Allow flexbox layout for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Make link cover full height of the box */
+}
+/* Projects container styling */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 squares per row */
+    grid-template-rows: repeat(2, 1fr); /* 2 squares per column */
+    /*margin-top: 60px;*/
+    height: 100vh; /* Full height of viewport */
+    width: 100%; /* Ensure full width */
+}
+
+/* Individual project box styling */
+.project-box {
+    height: 100%; /* Full height of the grid cell */
+    width: 100%; /* Full width of the grid cell */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+.project-box:hover {
+    transform: scale(1.05); /* Hover effect */
+    text-decoration: underline; /* Remove underline */
+    color: black;
+
+}
+
+.project-box a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Ensure text color is white */
+    font-family: Futura;
+}
+
+
+/* Flex container to split the page */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    /*grid-gap: 20px; !* Space between columns *!*/
+    margin-top: 0;
+    /*width: 100%; !* Ensure full width *!*/
+    height: 80vh;
+
+}
+
+/* Left section: Photo */
+.photo-section {
+    flex: 1;
+    display: flex;
+    /*height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6fa; /* Light color for the photo section */
+}
+
+.photo-section img {
+    width: 70%; /* Adjust image size */
+    height: auto;
+    margin-top: 0;
+    border-radius: 0; /* Optional: circular photo */
+    /*box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); !* Shadow effect *!*/
+}
+
+/* Right section: Text, Skills, Contact */
+.text-section {
+    /*overflow-x: hidden;*/
+    overflow-y: auto;
+    flex: 1;
+    padding: 2em;
+    height: 100vh;
+    background-color: #f0f8ff;/* Light lavender background for text */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    font-family: Futura;
+    font-size: 22px;
+    color: black;
+}
+
+.text-section h2 {
+    font-size: 25px;
+    color: black;
+    font-family: Futura;
+    font-weight: normal;
+}
+
+.text-section p {
+    margin-top: 120px;
+    font-size: 22px;
+    color: black;
+}
+
+.text-section a {
+    color: #4682b4;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Skills section with floating animation */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1em;
+}
+
+.skill-bubble {
+    background-color: darkslateblue; /* Tomato color */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    display: inline-block;
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* Hover effect for bubbles */
+.skill-bubble:hover {
+    background-color: mediumpurple; /* Light salmon color on hover */
+}
+
+/* Animation for floating bubbles */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Project details section */
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.project-description {
+    flex: 1;
+    max-width: 600px;
+    padding: 1em;
+    background-color: #e6e6fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project-description h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.project-description ul {
+    margin-top: 1em;
+}
+
+.project-description a.project-link {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: black;
+    text-decoration: none; /* No underline by default */
+    border-radius: 5px;
+}
+
+.project-description a.project-link:hover {
+    background-color: #5a9bd4;
+}
+
+/* Project preview image */
+.project-preview {
+    flex: 1;
+    max-width: 600px;
+}
+
+.project-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: transparent; /* Transparent background */
+    color: black; /* White text color for visibility */
+    z-index: 10;
+}
+

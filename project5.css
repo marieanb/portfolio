@@ -1,0 +1,92 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Keep the background transparent */
+    padding: 0.5em 2em;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    color: black; /* Set the color for the title */
+    font-weight: normal;
+    font-size: 2em;
+    font-family: Futura;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    /*margin: 0;*/
+    padding: 0;
+    display: flex; /* Make links horizontal */
+    gap: 15px;
+    margin-right: 4em;
+}
+
+nav ul li {
+    margin: 0; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change link color */
+    font-size: 1.4em;
+    font-family: Futura;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Project page container */
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns: left for video + image, right for second image */
+    gap: 20px; /* Space between the two sections */
+    margin-top: 60px;
+    height: auto; /* Adjust height to fit the content */
+}
+
+/* Left side (video + image) */
+.left-side {
+    display: flex;
+    flex-direction: column; /* Stack video and image vertically */
+    gap: 10px; /* Space between the video and image */
+}
+
+.project-video {
+    width: 100%; /* Full width for the video */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.project-image-left {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Right side (second image) */
+.project-image-right {
+    width: 100%; /* Full width for the right image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    position: relative;
+}

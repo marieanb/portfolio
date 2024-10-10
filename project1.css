@@ -1,0 +1,103 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Keep the background transparent */
+    padding: 0.5em 2em;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    color: black; /* Set the color for the title */
+    font-weight: normal;
+    font-size: 2em;
+    font-family: Futura;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    /*margin: 0;*/
+    padding: 0;
+    display: flex; /* Make links horizontal */
+    gap: 15px; /* Space between navigation items */
+    margin-right: 4em;
+}
+
+nav ul li {
+    margin: 0; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change link color */
+    font-size: 1.4em;
+    font-family: Futura;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Project page container */
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Space between columns */
+    /*padding: 60px;*/
+    margin-top: 60px;
+    height: 80vh; /* Adjust height to fit most of the screen */
+}
+
+/* Project images container */
+.project-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; /* Space between images */
+}
+
+/* Styling for project images */
+.project-image {
+    width: 100%; /* Make the images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Project description styling */
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #caffbf; /* Light background color */
+    border-radius: 8px; /* Optional rounded corners */
+    color: black; /* Text color */
+    font-family: Futura;
+    font-size: 1.2em;
+}
+
+.project-description h2 {
+    margin-bottom: 15px;
+    font-family: Futura;
+}
+
+.project-description p {
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: transparent; /* Transparent background */
+    z-index: 10;
+    position: relative; /* Keep footer at bottom */
+}

@@ -1,0 +1,114 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Keep the background transparent */
+    padding: 0.5em 2em;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    color: black; /* Set the color for the title */
+    font-weight: normal;
+    font-size: 2em;
+    font-family: Futura;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    /*margin: 0;*/
+    padding: 0;
+    display: flex; /* Make links horizontal */
+    gap: 15px;
+    margin-right: 4em;
+}
+
+nav ul li {
+    margin: 0; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change link color */
+    font-size: 1.4em;
+    font-family: Futura;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Project page container */
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns: text on the left, images on the right */
+    gap: 20px; /* Space between text and images */
+    margin-top: 60px;
+    height: auto; /* Adjust height to fit the content */
+}
+
+/* Photo section */
+.photo-section {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px; /* Space between the images */
+}
+
+/* Side-by-side images */
+.side-by-side-images {
+    display: flex;
+    justify-content: space-between; /* Space between the two images */
+    gap: 10px; /* Gap between two images */
+}
+
+.project-image {
+    width: calc(90% - 10px); /* Two images side by side, each taking around half the container width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    align-self: center;
+}
+
+/* Long image below the side-by-side images */
+.project-image-long {
+    width: 100%; /* Full width for the long image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px; /* Space between long image and side-by-side images */
+}
+
+/* Project description section */
+.project-description {
+    justify-content: flex-start;
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 8px;
+    color: black; /* Text color */
+    font-family: Futura;
+    font-size: 1.3em;
+}
+
+.project-description h2 {
+    margin-bottom: 15px;
+    font-family: Futura;
+}
+
+.project-description p {
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    position: relative;
+}
