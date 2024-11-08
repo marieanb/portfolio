@@ -236,9 +236,9 @@ nav ul li a:hover {
 }
 
 /* Hover effect for bubbles */
-.skill-bubble:hover {
-    background-color: mediumpurple; /* Light salmon color on hover */
-}
+/* .skill-bubble:hover {
+    background-color: mediumpurple; 
+} */
 
 /* Animation for floating bubbles */
 @keyframes float {
