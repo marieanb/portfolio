@@ -232,7 +232,7 @@ nav ul li a:hover {
     display: inline-block;
     position: relative;
     animation: float 4s ease-in-out infinite;
-    cursor: pointer;
+/*     cursor: pointer; */
 }
 
 /* Hover effect for bubbles */
