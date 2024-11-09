@@ -1,0 +1,107 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Keep the background transparent */
+    padding: 0.5em 2em;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    color: black; /* Set the color for the title */
+    font-weight: normal;
+    font-size: 2em;
+    font-family: Futura;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    /*margin: 0;*/
+    padding: 0;
+    display: flex; /* Make links horizontal */
+    gap: 15px; /* Space between navigation items */
+    margin-right: 4em;
+}
+
+nav ul li {
+    margin: 0; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change link color */
+    font-size: 1.4em;
+    font-family: Futura;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Reflection Container */
+.reflection-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    height: auto;
+}
+
+/* Photo Section */
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    border-radius: 10px; /* Small rounded corners for a modern look */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+/* Text Section */
+.text-section {
+    overflow-y: auto;
+    flex: 1;
+    padding: 2em;
+    height: 100vh;
+    background-color: #f0f8ff; /* Light lavender background */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Futura, sans-serif;
+    font-size: 0.9em; /* Adjusted to be consistent with 22px */
+    color: black;
+}
+
+.text-section h2 {
+    font-size: 1.5625em; /* Consistent with 25px */
+    color: black;
+    font-weight: normal;
+    margin-top: 1em; /* Added space between headings */
+}
+
+.text-section p {
+    margin-top: 1em;
+    font-size: 1.375em; /* Consistent with 22px */
+    color: black;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    font-family: Futura, sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: #f0f8ff;
+}
